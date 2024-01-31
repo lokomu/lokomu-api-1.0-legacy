@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  del-db:
+    image: postgis/postgis:15-3.4
+    container_name: del-db
+    volumes:
+      - del-data:/var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASS}
+      - POSTGRES_DB=${POSTGRES_DB}
+
+  del-api:
+    build: ./
+    container_name: del-api
+    environment:
+      # Notice that we're not using ${POSTGRES_IP} when using Docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://del-db:${POSTGRES_PORT}/${POSTGRES_DB}
+      - SPRING_DATASOURCE_USERNAME=${POSTGRES_USER}
+      - SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASS}
+      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.spatial.dialect.postgis.PostgisDialect
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_OPEN_IN_VIEW=false
+    ports:
+      - ${SERVER_PORT}:3000
+    links:
+      - del-db
+
+volumes:
+  del-data:
