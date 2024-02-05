@@ -44,6 +44,7 @@ public class CommunityItemController {
     return ResponseEntity.ok(itemListResponse);
   }
 
+  //TODO Fix the retrieval of items from non-members
   /**
    * Retrieves all items in a community.
    *

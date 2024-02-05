@@ -66,6 +66,8 @@ public class ItemController {
     return ResponseEntity.ok(itemIDResponse);
   }
 
+  //TODO Should share API endpoint
+
   /**
    * Creates a new given out item.
    *
