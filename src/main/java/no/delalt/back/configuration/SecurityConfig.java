@@ -22,6 +22,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
+  //TODO Use @ConfigurationProperties instead
   @Value("${not.secret.key}")
   private String secretKey;
 

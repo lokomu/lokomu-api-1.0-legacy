@@ -14,6 +14,7 @@ import java.util.Date;
 
 @Service
 public class Authentication {
+  //TODO Use @ConfigurationProperties instead
   @Value("${not.secret.key}")
   private String secretKey;
 

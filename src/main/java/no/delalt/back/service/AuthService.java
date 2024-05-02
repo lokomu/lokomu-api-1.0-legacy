@@ -49,7 +49,7 @@ public class AuthService {
   @Transactional(readOnly = true)
   public AuthResponse logInUser(LoginDTO loginDTO) {
     UserDAO user = authWorkerSevice.attemptAuthentication(
-      loginDTO.email(),
+      loginDTO.email().toLowerCase(),
       loginDTO.password()
     );
 
