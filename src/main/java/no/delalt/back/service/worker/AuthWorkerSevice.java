@@ -44,7 +44,7 @@ public class AuthWorkerSevice {
   private static final double MINIMUM_LONGITUDE = -180;
   private static final double MAXIMUM_LONGITUDE = 180;
   private static final double OFFSET_RANGE = 0.0007; //in degrees (~80 meters)
-
+//TODO Use @ConfigurationProperties instead
   @Value("${not.secret.key}")
   private void setAlgorithmKey(String key) {
     algorithm = Algorithm.HMAC256(key.getBytes(StandardCharsets.UTF_8));

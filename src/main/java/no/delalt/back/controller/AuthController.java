@@ -7,7 +7,6 @@ import no.delalt.back.model.dto.input.RegisterUserDTO;
 import no.delalt.back.response.AuthResponse;
 import no.delalt.back.service.AuthService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 @RestController
-@Validated
 @RequestMapping("/auth")
 public class AuthController {
   private final AuthService authService;
