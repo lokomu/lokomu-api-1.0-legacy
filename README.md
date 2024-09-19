@@ -4,7 +4,7 @@ Not in development.
 
 The original name for the project was "del". It means "share" in Norwegian. Share your stuff and time with others. 
 
-The upgraded and polished Kotlin version of this code will be open sourced as soon as the FastAPI version is done.
+The upgraded and polished Kotlin version of this code will be open sourced as soon as the FastAPI version is finished.
 
 #### Environment variables
 
