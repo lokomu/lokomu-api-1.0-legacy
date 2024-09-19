@@ -2,9 +2,11 @@
 
 Not in development.
 
-The original name for the project was "del". It means "share" in Norwegian. Share your stuff and time with others. 
+💚 The original name for the project was "del". It means "share" in Norwegian. Share your stuff and time with others. 
 
-The upgraded and polished Kotlin version of this code will be open sourced as soon as the FastAPI version is finished.
+🎓 This code was developed as part of a [Bachelor's project](https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3078083) at NTNU Trondheim, Norway, for a B.Sc. in Computer Science Engineering.
+
+🚀 The upgraded and polished Kotlin version of this code will be open sourced as soon as the FastAPI version is finished.
 
 #### Environment variables
 
