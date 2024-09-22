@@ -94,3 +94,7 @@ When building through Docker Compose, Docker automatically runs the tests and st
 
 ## API Documentation
 [API Docs via swagger](http://localhost:3000/api/swagger-ui/index.html#/)
+
+## Author
+
+This project was created by [Titas Virbickas](https://github.com/titusvi).
