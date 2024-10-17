@@ -6,7 +6,7 @@
 
 🎓 This code was developed as part of a [Bachelor's project](https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3078083) at NTNU Trondheim, Norway, for a B.Sc. in Computer Science Engineering.
 
-🚀 The upgraded and polished Kotlin version of this code is now open sourced [here](https://github.com/lokomu/lokomu-api-2.0-legacy).
+🚀 The upgraded and polished Kotlin version of this code is now [open sourced!](https://github.com/lokomu/lokomu-api-2.0-legacy)
 
 #### Environment variables
 
