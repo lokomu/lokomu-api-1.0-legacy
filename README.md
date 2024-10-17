@@ -1,4 +1,4 @@
-# Lokomu - Legacy Backend
+# Lokomu - Legacy API 1.0
 
 ## Not in development.
 
