@@ -99,4 +99,4 @@ When building through Docker Compose, Docker automatically runs the tests and st
 
 This project was created by [Titas Virbickas](https://github.com/titusvi).
 
-Thanks to Zara Mudassar who helped develop the app during the bachelor thesis.
+A heartfelt thank you to Zara Mudassar for her contributions to the development of the app during the bachelor thesis!
